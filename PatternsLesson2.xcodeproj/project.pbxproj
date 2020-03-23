@@ -13,6 +13,12 @@
 		7CBD32E22428CF2200B5152B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CBD32E02428CF2200B5152B /* Main.storyboard */; };
 		7CBD32E42428CF2300B5152B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CBD32E32428CF2300B5152B /* Assets.xcassets */; };
 		7CBD32E72428CF2300B5152B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CBD32E52428CF2300B5152B /* LaunchScreen.storyboard */; };
+		7CBD32EF2428CFB900B5152B /* UserInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBD32EE2428CFB900B5152B /* UserInfoService.swift */; };
+		7CBD32F12428D1F900B5152B /* DefaultsAlertsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBD32F02428D1F900B5152B /* DefaultsAlertsFactory.swift */; };
+		7CBD32F32428D46900B5152B /* DefaultsAlertsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBD32F22428D46900B5152B /* DefaultsAlertsBuilder.swift */; };
+		7CBD32F82428D65100B5152B /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBD32F72428D65100B5152B /* UserManager.swift */; };
+		7CBD32FA2428D90500B5152B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBD32F92428D90500B5152B /* AuthService.swift */; };
+		7CBD32FC2428D9AD00B5152B /* ServicesFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBD32FB2428D9AD00B5152B /* ServicesFacade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		7CBD32E32428CF2300B5152B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CBD32E62428CF2300B5152B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CBD32E82428CF2300B5152B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CBD32EE2428CFB900B5152B /* UserInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoService.swift; sourceTree = "<group>"; };
+		7CBD32F02428D1F900B5152B /* DefaultsAlertsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsAlertsFactory.swift; sourceTree = "<group>"; };
+		7CBD32F22428D46900B5152B /* DefaultsAlertsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsAlertsBuilder.swift; sourceTree = "<group>"; };
+		7CBD32F72428D65100B5152B /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		7CBD32F92428D90500B5152B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		7CBD32FB2428D9AD00B5152B /* ServicesFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesFacade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,10 @@
 			children = (
 				7CBD32DA2428CF2100B5152B /* AppDelegate.swift */,
 				7CBD32DC2428CF2100B5152B /* SceneDelegate.swift */,
+				7CBD32F72428D65100B5152B /* UserManager.swift */,
+				7CBD32F62428D63A00B5152B /* Service */,
+				7CBD32F52428D63300B5152B /* Builder */,
+				7CBD32F42428D61C00B5152B /* Factory */,
 				7CBD32DE2428CF2100B5152B /* ViewController.swift */,
 				7CBD32E02428CF2200B5152B /* Main.storyboard */,
 				7CBD32E32428CF2300B5152B /* Assets.xcassets */,
@@ -65,6 +81,32 @@
 				7CBD32E82428CF2300B5152B /* Info.plist */,
 			);
 			path = PatternsLesson2;
+			sourceTree = "<group>";
+		};
+		7CBD32F42428D61C00B5152B /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				7CBD32F02428D1F900B5152B /* DefaultsAlertsFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		7CBD32F52428D63300B5152B /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				7CBD32F22428D46900B5152B /* DefaultsAlertsBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		7CBD32F62428D63A00B5152B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7CBD32EE2428CFB900B5152B /* UserInfoService.swift */,
+				7CBD32F92428D90500B5152B /* AuthService.swift */,
+				7CBD32FB2428D9AD00B5152B /* ServicesFacade.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CBD32EF2428CFB900B5152B /* UserInfoService.swift in Sources */,
 				7CBD32DF2428CF2100B5152B /* ViewController.swift in Sources */,
+				7CBD32F82428D65100B5152B /* UserManager.swift in Sources */,
 				7CBD32DB2428CF2100B5152B /* AppDelegate.swift in Sources */,
 				7CBD32DD2428CF2100B5152B /* SceneDelegate.swift in Sources */,
+				7CBD32F32428D46900B5152B /* DefaultsAlertsBuilder.swift in Sources */,
+				7CBD32F12428D1F900B5152B /* DefaultsAlertsFactory.swift in Sources */,
+				7CBD32FC2428D9AD00B5152B /* ServicesFacade.swift in Sources */,
+				7CBD32FA2428D90500B5152B /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
